@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.Minestom:Minestom:aebf72de90'
+    implementation 'com.github.fabasoad:commons-lang:0.4.5'
+}
+
+test {
+    useJUnitPlatform()
+}
